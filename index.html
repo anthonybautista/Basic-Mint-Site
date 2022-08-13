@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <!--- Add your title below --->
+    <title>Basic Mint Site</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+            type="application/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--- Add your URL and Logo below --->
+        <a href="https://yourURL.com">
+            <img id="logo" src="your-logo.png" alt="Your Logo" />
+        </a>
+        <h2>Mint an NFT!</h2>
+        <button id="connect" class='cta-button connect-wallet-button'>
+            Connect Wallet
+        </button>
+        <!--- customize content to your heart's desire --->
+        <p>This web3 template is meant to be used with Smolrun's Basic ERC721A Smart Contract.</p>
+        <img id="square-300" src="free-nfts.png" alt="Free NFTs" />
+        <br/>
+        <p>You own <span id="owned">0</span> NFTs!</p>
+        <div id="mint">
+            <h3>NFTs Minted</h3>
+            <p><span id="nftsMinted">0</span> / 999</p>
+            <p id="mintError"></p>
+            <input id="mintCount" type="number" min="1" step="1" value="1"/>
+            <br/>
+            <button id="mintButton" class='cta-button connect-wallet-button'>
+                Mint
+            </button>
+            <p>Price: <span id="price">1</span> AVAX</p>
+            <br/>
+        </div>
+        <br/>
+        <br/>
+    </div>
+</body>
+</html>
